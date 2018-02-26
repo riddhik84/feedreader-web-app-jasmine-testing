@@ -35,8 +35,8 @@ $(function() {
                 expect(feed.url).toBeDefined();
                 expect(feed.url).not.toBe('');
                 let urlcheck = function() {
-                    new URL(feed.url)
-                }
+                    new URL(feed.url);
+                };
                 expect(urlcheck).not.toThrow();
             });
         });
