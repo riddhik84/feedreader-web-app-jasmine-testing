@@ -95,7 +95,7 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('Has atlest single entry in the feed container', function() {
-            expect($('.entry')[0]).toBeDefined();
+            expect($('.feed .entry').length).not.toBeLessThan(1);
         });
     });
 
